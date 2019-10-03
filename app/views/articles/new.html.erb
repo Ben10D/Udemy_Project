@@ -1,0 +1,14 @@
+<div class=MainPage>
+	<%= form_with scope: :article, url:articles_path, local: true do |form| %>
+<p>This is my website</p><p>
+  <%= form.label :title%>
+  <%= form.text_field :title %>
+</p>
+<p>
+  <%= form.label :text %>
+  <%= form.text_field :text %>
+</p>
+<p>
+  <%= form.submit %>
+</p><footer>ahahahah</footer>
+<% end %></div>
