@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="MainPage">
+  <h1>Listing Aticles</h1>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+      <th></th>
+    </tr>
+    <% @articles.each do|article|%><tr>
+    <td><%= article.title%></td>
+    <td><%= article.text%></td>
+    <td><%= link_to 'Display Article',articles_path %></td><% end %></tr>
+  </table>
+</div>
+</body>
+</html>
