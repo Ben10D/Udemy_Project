@@ -1,15 +1,2 @@
-<div class=MainPage>
-	<%= form_with scope: :article, url:articles_path, local: true do |form| %>
-<p>This is my website</p><p>
-  <%= form.label :title%>
-  <%= form.text_field :title %>
-</p>
-<p>
-  <%= form.label :text %>
-  <%= form.text_field :text %>
-</p>
-<p>
-  <%= form.submit %>
-</p><footer>none to be displayed</footer>
-<% end %></div>
-<%= link_to 'Back',articles_path %>
+<h1>New Article</h1>
+<%= render 'form' %>
