@@ -10,11 +10,11 @@
 <%= form_with model: @article, local: true do |form| %>
 <p>
   <%= form.label :commenter %>
-  <%= form.text_field :commenter %>
+  <%= form.text_field :commenter, placeholder: "Enter your name" %>
 </p>
 <p>
-  <%= form.label :comment %>
-  <%= form.text_area :comment %>
+  <%= form.label :comment%>
+  <%= form.text_area :comment, placeholder: "Add your comment"%>
 </p>
 <p>
   <%= form.submit "Add your comment" %>
