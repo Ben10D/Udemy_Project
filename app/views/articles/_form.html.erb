@@ -13,21 +13,16 @@
       </ul>
     </div>
   <% end %>
- 
   <p>
     <%= form.label :title %><br>
     <%= form.text_field :title, placeholder: "Mention title name for your article" %>
   </p>
- 
   <p>
     <%= form.label :text %><br>
     <%= form.text_area :text, placeholder: "Write your article" %>
-  </p>
- 
+  </p> 
   <p>
     <%= form.submit %>
   </p>
- 
 <% end %>
- 
 <%= link_to 'Back', articles_path %>
