@@ -1,0 +1,16 @@
+<%= form_with url: articles_index_path, local: true do|t| %>
+<p>
+	<%= t.label :email %>
+	<%= t.email_field :email %>
+</p>
+<p>
+	<%= t.label :password %>
+	<%= t.password_field :password %>
+</p>
+<p>
+	<%= t.submit %>
+</p>
+<p>
+	<%= link_to 'i am a new user',users_new_path %>
+</p>
+<% end %>

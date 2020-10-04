@@ -1,11 +1,12 @@
 class ArticlesController < ApplicationController
-   skip_before_action :verify_authenticity_token, :only => :create
+    
 
   def show
   	@article = Article.find(params[:id])
   	
   end
   def index
+
   	@articles = Article.all
   end
   def new
